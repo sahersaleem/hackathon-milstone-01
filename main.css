@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+/* Basic styling */
+h1 {
+  font-size: 18px;
+  line-height: 1.2rem;
+}
+h2 {
+  font-size: 10px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+p {
+  font-size: 10px;
+  line-height: 1.2rem;
+  word-spacing: 0.1rem;
+}
+li {
+  font-size: 10px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+
+.main-container {
+   width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.resume-container {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  width: 550px;
+
+  height: auto;
+  color: white;
+
+  background-color: rgba(248, 248, 255, 1);
+  
+}
+img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.first-div {
+  padding: 10px;
+  width: auto;
+  background-color: rgba(120, 81, 169, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second-div {
+  color: black;
+  padding: 10px 40px;
+  display: flex;
+  gap: 3rem;
+  padding-top: 25px;
+}
+
+.second-div h1 {
+  color: rgba(120, 81, 169, 1);
+  font-weight: 600;
+  & p {
+    font-size: 8px;
+  }
+}
+
+.fa-solid,
+.fa-regular,
+.fa-brands {
+  color: rgba(120, 81, 169, 1);
+}
+
+.contact div {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 400;
+}
+.contact h1 {
+  margin-bottom: 2px;
+
+  & p {
+    font-size: 8px;
+  }
+}
+i {
+  font-size: 10px;
+}
+
+.education-list {
+  display: flex;
+  gap: 0.8rem;
+
+  flex-direction: column;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.education div h2 {
+  font-weight: 600;
+  color: rgb(7, 7, 7);
+  font-size: 10px;
+}
+
+.first-part {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills ul {
+  margin-left: 10px;
+}
+
+.second-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profile p {
+  white-space: wrap;
+}
+
+
+@media (width<600px) {
+ p{
+  font-size: 9px;
+  line-height: 1rem;
+  word-spacing: 0rem;
+ }
+ li{
+  font-size: 9px;
+ }
+}
+
+@media (width<400px){
+  .first-div{
+    flex-direction: column;
+
+    & div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  .second-div{
+    flex-direction: column;
+  }
+  .resume-container{
+    padding-bottom: 20px;
+  }
+
+  h1{
+    margin-bottom: 8px;
+  }
+}
