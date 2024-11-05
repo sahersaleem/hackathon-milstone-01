@@ -139,10 +139,11 @@ i {
   gap: 2rem;
 }
 
-.skills ul {
+#skills {
   margin-left: 10px;
+  margin-bottom: 2px;
+  display: none;
 }
-
 .second-part {
   display: flex;
   flex-direction: column;
@@ -150,6 +151,16 @@ i {
 }
 .profile p {
   white-space: wrap;
+}
+
+.btn{
+ background-color:  rgba(120, 81, 169, 1);
+ border-radius: 10%;
+ border: none;
+ color: white;
+ padding:  4px 10px;
+ font-size: 9px;
+
 }
 
 
@@ -164,7 +175,11 @@ i {
  }
 }
 
-@media (width<400px){
+@media (width<415px){
+  .main-container{
+padding-left:30px;
+padding-right: 30px;
+  }
   .first-div{
     flex-direction: column;
 
@@ -185,4 +200,6 @@ i {
   h1{
     margin-bottom: 8px;
   }
+  
+
 }
